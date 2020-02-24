@@ -6,6 +6,7 @@ ul {
     list-style: none outside;
 }
 
+
 /* Header section  */
 .site-header {
     color:white;
@@ -81,6 +82,8 @@ ul {
         width: 80%;
         height: 25em;
         border-radius: 0.5em;
+    }
+
     }
     iframe:hover {
         opacity:1;
