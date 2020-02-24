@@ -1,0 +1,540 @@
+@import url('reset.css');
+@import url('animations.css');
+@import url('navigation.css');
+@import url('media.css');
+@import url('logos.css');
+
+.wrapper {
+    max-width: 100vw;
+    margin: 0 auto;
+}
+ul {
+    list-style: none outside;
+}
+/* Header section  */
+.site-header {
+    color:white;
+    min-height: 40em;
+    background: url(https://images.unsplash.com/uploads/14126691796798a85b1b0/970ca552?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=8);
+    background-size: cover;
+}
+
+.header-inner {
+    padding: 0.5rem 0 5em 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
+}
+.site-brand  p{
+    font-size: 3em;
+    text-transform: uppercase;
+    text-shadow: 0.1rem 0.1rem black;
+    color:rgb(254,209,54);
+}
+
+.site-media:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top:0;left:0;right: 0;bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 0;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+.site-media:hover:before {
+    background-color: rgba(0,0,0,0.5);
+    border-top:1px solid rgb(254,209,54);
+    border-bottom:1px solid rgb(254,209,54);
+}
+.site-media h1 {padding-bottom: 2rem;}
+.site-media h1,
+.site-media a,
+.site-media p {
+    z-index: 1;
+    position: relative;
+}
+.site-media a {
+    text-transform: uppercase;
+
+}
+.site-nav a:hover, 
+.site-header .site-media a:hover {
+    background-color: rgba(0,0,0,0.5);
+    border-top:1px solid rgb(254,209,54);
+    border-bottom:1px solid rgb(254,209,54);
+    color :rgb(254,209,54);
+}
+
+/* Site main content*/
+/* Services */
+.site-services {
+    text-align: center;
+    background:url(/First-Theme/images/background.jfif);
+    color:white;
+}
+ .service-title {
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+    font-size: 1.5em;
+    color:white;
+
+}
+.service-title:not(:last-child){
+    margin-bottom:3em;
+}
+.service-title:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top:0;left:0;right: 0;bottom: 0;
+    background-color: rgba(207, 11, 11, 0.3);
+    z-index: 0;
+    border-top: 1px inset black;
+    border-bottom: 1px outset black;
+}
+.service-title:not(:last-child):hover:before {
+    background-color: rgba(0,0,0,0.5);
+    border-top: 1px inset white;
+    border-bottom: 1px outset white;
+
+}
+
+.service-title h2,
+.service-title p {
+    z-index: 1;
+    position: relative;
+}
+.service-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+}
+.service-content {
+    flex-basis: 25%;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+.service-content  p {
+    position: relative;
+}
+.service-content  h3 {
+    padding-bottom: 0.5rem;
+}
+
+.service-content i:before {
+    display: block;
+    position: inherit;
+    height: 2em;
+    width: 2.05em;
+    border-left:1px solid white;
+    border-right:1px solid white;
+    border-radius: 50%;
+    padding-top: 0.45em;
+    background-color: rgba(207, 11, 11, 0.3);
+}
+.service-content .content { 
+    margin-top: 1.5em;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+.service-content .content:before {
+    display: block;
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-top:1px inset white;
+    border-bottom:1px unset white;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.service-content .content h3 {
+    padding-top: 0.5em;
+}
+.service-content .content h3,
+.service-content .content p {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 0.5em;
+}
+
+.service-content i{
+    cursor: pointer;
+    font-size: 4em;
+    color: white;
+ 
+}
+.service-content i:hover:before {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Portfolio */
+.portfolio .service-title:before{
+    background-color: rgba(50, 150, 231, 0.5);
+}
+.portfolio .service-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .service-content {
+    flex:0 0 26%;
+}
+
+.portfolio .service-content> p{
+    overflow: hidden;
+    padding: 0;   
+}
+
+.portfolio .service-content> p:before {
+    display: block;
+    content: '';
+    padding-top: 130%;
+    background-color: rgba(0,0,0,0.5);
+    border-top:1px inset white;
+    border-bottom:1px unset white;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.portfolio .service-content img {
+    width: 80%;
+    height: auto ;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    opacity: 0.5;
+    border-radius: 1em;
+}
+
+.portfolio .service-content> p:hover:before {
+    background-color: rgba(0,0,0,0.7);
+  
+}
+.portfolio .service-content> p:hover img{
+    opacity:1;
+    border-left:1px inset white;
+    border-right:1px inset white;
+}
+.portfolio .service-content> p:hover >img{
+width: 95%;
+transition: all 0.3s ease-in-out;
+transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+.portfolio .service-content .content:before {
+    background-color: rgba(50, 150, 231, 0.5);
+
+}
+
+/* About */
+.site-about {
+    background:url(/First-Theme/images/background.jfif);
+    color:black;
+    padding-bottom: 2em;
+
+}
+
+.site-about .service-title:before {
+    background-color: rgba(96, 241, 103, 0.5);
+}
+
+.site-about-timeline {
+    padding: 0 1em;
+
+}
+
+
+.site-about-timeline ul li {
+    margin-bottom: 5em;
+    padding-bottom: 2em;
+    position: relative;
+    width: 80%;
+ 
+}
+
+
+
+.site-about-timeline ul li:before {
+    display: block;
+    content: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=272&q=80');
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 5px inset  rgba(96, 241, 103, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+    right: 0;
+    left: 0;
+    opacity: 0.7;
+    
+}
+.site-about-timeline ul li:nth-child(2):before{
+  
+    content: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=272&q=80');
+}
+.site-about-timeline ul li:nth-child(3):before{
+    content: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=272&q=60');
+}
+.site-about-timeline ul li:nth-child(4):before{
+    content: url('https://images.unsplash.com/photo-1489506020498-e6c1cc350f10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=272&q=80');
+}
+
+.site-about-timeline li:after {
+    display: block;
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    border-top: 1px inset rgba(255, 255, 255, 0.8);
+    border-bottom: 1px inset rgba(255, 255, 255, 0.8);
+    background-color:rgba(96, 241, 103, 0.5);
+    z-index: 0;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    top:-1em;
+   
+}
+
+.site-about-timeline ul li:hover:after{
+    background-color: rgba(0,0,0,0.7);
+    border-bottom: 1px solid white;
+}
+ 
+.site-about-timeline ul li:hover:before {
+    background-color: rgba(235, 231, 231, 0.8);
+    border-bottom: 1px solid white;
+    color:white;
+    opacity: 1;
+}
+.site-about-timeline li span,
+.site-about-timeline li h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1em;
+}
+.site-about-timeline li h3 {
+    font-size: 1.3em;
+    padding-bottom: 1rem;
+}
+.site-about-timeline li:hover{
+    color:white;
+}
+
+
+/* Amazing Team*/
+
+
+.site-team .service-title:before {
+ background-color: rgba(255, 149, 10, 0.5);
+}
+
+.site-team  .service-content .content:before {
+background-color: rgba(255, 149, 10, 0.5);
+
+}
+
+.site-team {
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 2em;
+}
+
+.site-team .service-content {
+    flex:0 0 20%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.site-team .service-content> p{
+    overflow: hidden;
+    padding: 0;   
+    border-radius: 10em;
+    border-top:1px solid  rgba(50, 150, 231, 0.0);
+    border-right:1px solid  rgba(50, 150, 231, 0.0);
+    border-bottom:1px solid rgba(0, 0, 0, 0.0);
+    border-left:1px solid rgba(0, 0, 0, 0.0);
+
+}
+.site-team .service-content> p:hover {
+    border-bottom:1px solid white;
+    border-left:1px solid white;
+    border-top:1px solid rgba(0, 0, 0, 0.0);
+    border-right:1px solid rgba(0, 0, 0, 0.0);
+}
+
+.site-team .service-content> p:before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+.site-team .service-content img {
+    width: 100%;
+    height: auto ;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    opacity: 0.5;
+    
+}
+.site-team .landscape img {
+    width:auto; 
+    height: 100%;
+}
+.site-team .content a {
+    position: relative;
+    z-index: 1;
+}
+.site-team a i {
+    font-size: 1em;
+    padding-right: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.site-team .service-content:hover {
+    color:white;
+}
+   /* Contact us*/
+
+
+.site-contacts {
+    background-image: url(/First-Theme/images/dark-map-continents-world-map-hd-wallpaper-preview.jpg);
+    background-size: cover;
+    font-size:1.1em;
+}
+.site-contacts .service-title:before {
+    background-color: rgba(255, 255, 255, 0.5);
+   }
+
+.site-contacts .contact-us {
+   
+    padding-bottom:3em;
+
+}
+
+.contact-us p a:hover,
+.contact-us p a:focus,
+.site-contacts .contact-us form p:hover label
+{   color:red;
+    opacity:0.9;
+}
+
+.site-contacts .contact-us label:hover,
+.site-contacts .contact-us input:hover,
+.site-contacts .contact-us textarea:hover,
+.site-contacts .contact-us button:hover,
+.site-contacts .contact-us input:focus,
+.site-contacts .contact-us input:focus,
+.site-contacts .contact-us label:focus,
+.site-contacts .contact-us textarea:focus,
+.site-contacts .contact-us button:focus
+{
+    outline: none;
+    opacity:0.8;
+
+}
+
+
+.site-contacts .contact-us .inner {
+    display: flex;
+    justify-content: center;
+    padding: 3em 0 ;
+
+}
+.inner form {
+   flex:0 0 40%;
+   margin-right:2em;
+ 
+}
+.inner .text-us {
+    flex: 0 40%;
+}
+.inner .text-us textarea {
+    opacity:0.5;
+    border-radius:0.5em;
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+
+.inner form p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex:1 1 100%;
+}
+form p input {
+    opacity:0.5;
+    flex:1 1 100%;
+    height: 4em;
+    order:2;
+    border-radius:0.5em;
+}
+form p label {
+    opacity:0.5;
+    border-radius:0.5em;
+    order:1;
+}
+
+.contact-us p a {
+    opacity:0.5;
+    border-radius:0.5em;
+    border:1px solid white;
+    text-decoration: none;
+    color:white;
+    font-size: 1.1em;
+    outline: none;
+    padding: 0.5em 0.7em;
+}
+
+
+/* Site Footer*/
+
+.site-footer {
+    font-size: 1em;
+    color:white;
+    background-image: url(/First-Theme/images/dark-map-continents-world-map-hd-wallpaper-preview.jpg);
+    background-size: cover;
+
+}
+.site-footer .service-title:before{
+    background-color: rgba(15, 15, 15, 0.6);   
+}
+.site-footer .technologies {
+   margin-bottom: 1em;
+}
+
+.site-footer p a {
+    text-decoration: none;
+    color: white;
+    opacity:0.5;
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 1.3em;
+
+
+}
+.site-footer a img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    opacity:0.5;
+    padding-bottom: 0.5em;
+
+}
+.site-footer a:hover img,
+.site-footer a:hover {
+    opacity:1;
+    filter: invert(0%) sepia(0%) saturate(2878%) hue-rotate(346deg) brightness(100%) contrast(97%); 
+
+   }
+

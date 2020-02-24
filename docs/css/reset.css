@@ -1,0 +1,16 @@
+/* Remove all default space*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset CSS Box model sizing*/
+* , *:before , *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
