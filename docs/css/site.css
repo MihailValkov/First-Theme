@@ -73,7 +73,7 @@ ul {
 /* Services */
 .site-services {
     text-align: center;
-    background:url(/First-Theme/images/background.jfif);
+    background:url(../images/background.jfif);
     color:white;
 }
  .service-title {
@@ -237,7 +237,7 @@ transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
 
 /* About */
 .site-about {
-    background:url(/First-Theme/images/background.jfif);
+    background:url(../images/background.jfif);
     color:black;
     padding-bottom: 2em;
 
@@ -407,7 +407,7 @@ background-color: rgba(255, 149, 10, 0.5);
 
 
 .site-contacts {
-    background-image: url(/First-Theme/images/dark-map-continents-world-map-hd-wallpaper-preview.jpg);
+    background-image: url(../images/dark-map-continents-world-map-hd-wallpaper-preview.jpg);
     background-size: cover;
     font-size:1.1em;
 }
@@ -502,7 +502,7 @@ form p label {
 .site-footer {
     font-size: 1em;
     color:white;
-    background-image: url(/First-Theme/images/dark-map-continents-world-map-hd-wallpaper-preview.jpg);
+    background-image: url(../images/dark-map-continents-world-map-hd-wallpaper-preview.jpg);
     background-size: cover;
 
 }
