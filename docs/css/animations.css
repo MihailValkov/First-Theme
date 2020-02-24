@@ -1,0 +1,90 @@
+/* 
+.service-title:not(:last-child) {
+    background: rgba(6, 19, 199, 0.4);
+    animation: mymove1 5s infinite;
+  }
+  
+  @keyframes mymove1 {
+    0% {background-color:rgba(92, 94, 18, 0.1);}
+    50% {background-color:rgba(179, 176, 6, 0.5);}
+    100% {background-color:rgba(215, 247, 39, 0.8);}
+  }
+   */
+
+ 
+  .site-team .service-content> p{
+ 
+    animation: mymove3 1s infinite;
+  }
+  
+  @keyframes mymove3 {
+    50% {border-top-color: rgb(255, 255, 255);}
+    50% {border-bottom-color: rgb(255, 255, 255);}
+  }
+
+
+  .footer i:hover,
+  .site-team .service-content> p:hover
+  {
+ 
+    animation: mymove30 1s ease-in;
+  }
+  
+  @keyframes mymove30 {
+    50% {transform:scale(1.2);}
+  }
+  
+
+  /* .site-team .service-content> p img{
+ 
+    animation: mymove4 5s infinite;
+  }
+  @keyframes mymove4 {
+  0% {opacity :0.3;}
+  50% {opacity :0.5;}
+  100% {opacity :1;}
+  } */
+
+.service-content i,
+.site-brand p{
+    animation: mymove2 1s infinite;
+  }
+  
+  @keyframes mymove2 {
+    50% {text-shadow: 10px 20px 30px rgb(0, 0, 0);}
+  }
+
+
+.site-nav a{
+  animation: mymove20 2s ease-out;
+}
+@keyframes mymove20 {
+  0% {text-shadow: 0px -250px 0px rgb(0, 0, 0);}
+  50% {text-shadow: 0px -30x 0px rgb(12, 12, 12);}
+
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+
+
+.site-media {
+  animation: mymove201 2s ease-in-out;
+}
+@keyframes mymove201 {
+
+
+    0%   { transform:scale(0.5); opacity:0.0; }
+    50%  { transform:scale(1.2); opacity:0.5; }
+    100% { transform:scale(1.0); opacity:1.0; }
+}
+
+
+.footer a i{
+    animation: mymove203 5s infinite;
+  }
+  
+  @keyframes mymove203 {
+    50% {text-shadow: 0px 0px 12px rgb(255, 255, 255);}
+  }
